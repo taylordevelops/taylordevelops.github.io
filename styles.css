@@ -1,0 +1,91 @@
+body{
+    color: #dadada;
+    margin: 0;
+    padding: 0;
+    background-color: #030E20;
+}
+div#buttonwrapper{
+    width: 100%;
+    text-align: center;
+}
+button{
+    margin: 12px;
+}
+article{
+    max-width: 100%;
+    width: 400px;
+    padding: 10vh 32vw;
+}
+h1.heading{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    top: -100vh;
+    text-align: center;
+}
+
+section{
+    position: relative;
+    margin: 0;
+    width: 400px;
+    top: -100vh;
+}
+
+div#greeting-text, div#statement-text, div#cta{
+    position: relative;
+    margin: 10vh auto 0 22vw;
+    width: 100%;
+    top: -100vh;
+    text-align: left;
+}
+
+div#starbox{
+    height: 100vh;
+    max-width: 100vw;
+     margin: 0;
+
+     /* Gradient Generated with https://coolors.co/gradient-maker/032742-776726-030e20?position=0,66,100&opacity=100,40,100&type=linear&rotation=270 */
+     background: hsla(206, 91%, 14%, 1);
+
+     background: linear-gradient(270deg, hsla(206, 91%, 14%, 1) 0%, hsla(48, 52%, 31%, 0.4) 66%, hsla(217, 83%, 7%, 1) 100%);
+     
+     background: -moz-linear-gradient(270deg, hsla(206, 91%, 14%, 1) 0%, hsla(48, 52%, 31%, 0.4) 66%, hsla(217, 83%, 7%, 1) 100%);
+     
+     background: -webkit-linear-gradient(270deg, hsla(206, 91%, 14%, 1) 0%, hsla(48, 52%, 31%, 0.4) 66%, hsla(217, 83%, 7%, 1) 100%);
+     
+     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#032742", endColorstr="#776726", GradientType=1 );
+}
+div.star{
+    position: relative;
+    left: 200px;
+    top: 200px;
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0.6px #ffc78e;
+
+    animation: 4s infinite shine; 
+}
+@keyframes shine {
+    0% {
+        opacity: 10%;
+    }
+    12%{
+        opacity: 80%;
+    }
+    70% {        
+        opacity: 5%;
+    }
+    100% {        
+        opacity: 1%;
+    }
+  }
+
+  #statement-text{
+      max-width: 100%;
+  }
+
+  a{
+        color: #fefefe;
+  }

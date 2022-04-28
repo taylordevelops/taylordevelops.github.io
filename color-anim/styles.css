@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow: hidden;
+}
+.container {
+  max-width: 160vw;
+  margin: 0 auto;
+  padding-top: 5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-box {
+  height: 20vh;
+  width: 20vh;
+  background-color: transparent;
+  border-radius: 4.5%;
+  box-shadow: 1.25px 1.25em 3.75em #f8f8f8, -1.25em -1.25em 3.75em #c7c7c7;
+  animation: rotation 2s infinite linear;
+}
+
+.color-box {
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+  .color-box {
+    height: 40vh;
+    width: 40vh;
+  }
+}

@@ -65,7 +65,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: #333;
 }
 
@@ -279,6 +279,24 @@ footer p:nth-child(2) {
 footer > p > a {
     font-size: 0.7rem;
     text-decoration: none;
+    color: #333;
+}
+
+footer > p > a:link {
+    color: #333;
+}
+
+footer > p > a:visited {
+    color: #333;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+footer > p > a:active {
+    color: #333;
 }
 
 /*  --- Width =< 1150px Styles ---

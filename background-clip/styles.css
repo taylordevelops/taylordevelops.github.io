@@ -13,7 +13,7 @@ body {
 p {
     font-size: 0.8rem;
     line-height: 1.6rem;
-    background: url(/tcicon.png);
+    background: url(tcicon.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;

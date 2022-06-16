@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    background: url(/tcicon.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.05);
+    -webkit-user-select: none;
+}

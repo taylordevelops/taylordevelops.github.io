@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    font-size: 18px;
+
+/*     
+    Colorful Background? 
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    */
+
+}
+a{
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(214, 214, 214);
+    color: rgb(109, 180, 210);
+}
+a:link{
+}
+a:visited{
+    color: rgb(109, 180, 210);
+}
+a:hover{
+    color: rgb(109, 180, 210);
+    text-decoration: underline;
+    text-decoration-color: rgb(109, 180, 210);
+    text-decoration-thickness: 0.2rem;
+    transform: translate(0,-0.1rem);
+}
+a:active{}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Libre Baskerville', serif;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+.masthead{
+    text-align: center;
+    background-color: rgb(30, 51, 60);
+    padding: 1rem 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.logo{
+    position: relative;
+    left: 1.5rem;
+    top: 1.5rem;
+}
+@media only screen and (min-width: 30rem){
+    .logo{
+        left: -1rem;
+        top: 2.1rem;
+    }
+}
+.logo-text{
+    font-size: 3rem;
+    color: #efefef;
+    /* text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: rgb(109, 180, 210); */
+}
+nav ul {
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-transform: capitalize;
+    margin: 1rem;
+    padding: 0 1rem 1rem 1rem;
+}
+@media only screen and (min-width: 60rem){
+    nav ul{
+        max-width: 11rem;
+        margin-top: 2.05rem;
+        background-color: #ffffff;
+        border-radius: 0.175rem;
+        }
+}
+nav ul li {
+    margin: 1rem;
+    padding-top: 1rem;
+    
+    text-decoration: underline;
+    text-decoration-color: rgb(214, 214, 214);
+    color: rgb(109, 180, 210);
+}
+nav ul li:hover {
+    
+    text-decoration-color: rgb(109, 180, 210);
+}
+nav a {
+    transition: ease;
+    transition-delay: 0ms;
+    
+}
+nav a:link {
+    font-weight: bold;
+    
+}
+nav a:visited {
+    color: #000;
+}
+nav a:hover {
+    color: rgb(109, 180, 210);
+    text-decoration: underline;
+    text-decoration-color: rgb(109, 180, 210);
+    text-decoration-thickness: 0.2rem;
+    transform: translate(0,-0.1rem);
+}
+nav a:active {
+}
+div.main-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+article{
+    max-width: 44rem;
+    padding: 0 1rem;
+    line-height: 1.75;
+
+    background-color: rgb(242, 241, 241);
+    border-radius: 0.175rem 0.175rem 0.175rem 0.175rem;
+}
+
+.yellow-line{
+    background-color: rgba(255, 253, 149, 0.5);
+    height: 0.25rem;
+    border: 0;
+}
+
+aside{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+@media only screen and (min-width: 75rem){
+    aside{
+        display:inline;
+        max-width: 11rem;
+        padding: 1.1rem 1rem 1rem 1rem;
+        }
+}
+.g-image{
+    width: 150px;
+    height: 150px;
+    margin-top: 1rem;
+    border-radius: 0.175rem;
+}
+.g-image:hover{
+    outline: 0.5rem solid rgba(109, 180, 210, 0.25);
+    transform: translate(0,-0.1rem);
+}
+footer {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: rgb(30, 51, 60);
+    color: #efefef;
+}
+footer a:link{
+    color: #93beff;
+}
+footer a:visited{
+    color: #93beff;
+}
+footer a:hover{
+    text-decoration-style: double;
+    text-decoration-color: rgb(109, 180, 210);
+    text-decoration-thickness: 0.1rem;
+}
+footer a:active{
+    color: #efefef;
+}
+.contact-info{
+    max-width: 22rem;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+.cc-att{
+    max-width: 32rem;
+    padding: 2rem;
+    font-size: 0.6rem;
+}

@@ -4,13 +4,6 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: auto;
     font-size: 18px;
-
-/*     
-    Colorful Background? 
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    */
-
 }
 a{
     font-weight: bold;
@@ -131,13 +124,6 @@ article{
     background-color: rgb(242, 241, 241);
     border-radius: 0.175rem 0.175rem 0.175rem 0.175rem;
 }
-
-.yellow-line{
-    background-color: rgba(255, 253, 149, 0.5);
-    height: 0.25rem;
-    border: 0;
-}
-
 aside{
     display: flex;
     flex-flow: row wrap;

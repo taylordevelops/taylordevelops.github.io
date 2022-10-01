@@ -1,0 +1,152 @@
+.resume{
+    max-width: 70rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows:  min-content;
+    grid-auto-flow: row dense;
+    grid-template-areas: 
+        "profile-name"
+        "profile-photo"
+        "nav"
+        "about"
+        "skills"
+        "work" 
+        "community"
+        "education"
+        "references"
+        "footer"
+        ;
+}
+
+@media only screen and (min-width:62rem){
+    .resume{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows:  min-content;
+        grid-auto-flow: row dense;
+        grid-template-areas: 
+        "profile-name profile-photo"
+        "nav nav"
+        "work about"
+        "work skills"
+        "work community"
+        "work education"
+        "references references"
+        "footer footer"
+        ;
+    }
+}
+
+.grid-item{
+    margin: 1rem;
+}
+
+.profile-name{
+    grid-area: profile-name;
+    place-self: center;
+    font-size: 1.75rem;
+}
+
+
+.profile-photo{
+    max-width: 100%;
+    width: 17rem;
+    height: 17rem; 
+    background-image: url("../images/photo-small.jpg");
+
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    border-radius: 25%;
+
+    grid-area: profile-photo;
+    place-self: center;
+}
+
+/* Resize Profile Photo */
+/* @media only screen and (min-width: 40rem){
+    .profile-photo{
+        width: 32rem;
+        height: 32rem;
+        background-image: url("../images/photo-medium.jpg");
+
+    }
+} */
+/* End Resize Profile Photo */
+
+.main-nav{
+    margin-top: 1.5rem;
+    grid-area: nav;
+    place-self: center;
+}
+.main-nav-list{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+.main-nav-list li{
+    padding: 2rem;
+}
+.main-nav-list li:hover{
+    background-color: aqua;
+}
+.main-nav a{
+}
+
+.about {
+    grid-area: about;
+}
+
+.work{
+    grid-area: work;
+}
+.work-list{
+}
+.work-item{
+
+}
+.education{
+    grid-area: education;
+}
+.skills{
+    grid-area: skills;
+}
+.skills ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+.skills ul li{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 0.125rem #eee dashed;
+}
+.community-service{
+    grid-area: community;
+}
+.references{
+    grid-area: references;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.references h3{
+    width: 100%;
+}
+.reference{
+    padding: 0 1rem;
+}
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-flow: row wrap;
+}
+footer p{
+    width: 100%;
+}
+@media only screen and (min-width: 40rem){
+    footer p{
+        width: 50%;
+    }
+}

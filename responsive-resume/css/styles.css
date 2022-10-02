@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&display=swap');
 
 body{
+    margin: 1rem;
+    padding: 0;
+
     background: rgb(212,239,242);
-background: radial-gradient(circle, rgba(212,239,242,1) 0%, rgba(194,211,235,1) 100%);
+    background: radial-gradient(circle, rgba(212,239,242,1) 0%, rgba(194,211,235,1) 100%);
 }
 
 .resume{

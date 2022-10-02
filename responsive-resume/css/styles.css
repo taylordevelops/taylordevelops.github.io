@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&display=swap');
 
+body{
+    background: rgb(212,239,242);
+background: radial-gradient(circle, rgba(212,239,242,1) 0%, rgba(194,211,235,1) 100%);
+}
+
 .resume{
     max-width: 70rem;
     margin: 0 auto;
@@ -7,7 +12,7 @@
 
     line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 
     grid-template-columns: 1fr; 
     grid-template-rows:  min-content;
@@ -26,6 +31,22 @@
         ;
 }
 
+a:link{
+    color: #000;
+}
+a:visited{
+    color: #000;
+}
+a:hover{
+    color: #000;
+    text-decoration-color: rgb(212,239,242);
+    text-decoration-thickness: 0.5rem;
+}
+a:active{
+    color: #000;
+}
+
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Playfair Display', serif;
 }
@@ -37,7 +58,7 @@ h2{
 }
 h3{
     font-size: 2rem;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
     padding: 0 0 0 1rem;
 }
 h4{
@@ -49,7 +70,7 @@ h5{
     padding: 0 0 0 2.5rem;
 }
 
-@media only screen and (min-width:62rem){
+@media only screen and (min-width:46rem){
     .resume{
         grid-template-columns: 1fr 1fr; 
         grid-template-rows:  min-content;
@@ -71,6 +92,7 @@ h5{
     /* margin: 1rem; */
 }
 
+
 .profile-name{
     grid-area: profile-name;
     place-self: center;
@@ -81,8 +103,8 @@ h5{
 
 .profile-photo{
     max-width: 100%;
-    width: 17rem;
-    height: 17rem; 
+    width: 15rem;
+    height: 15rem; 
     background-image: url("../images/photo-small.jpg");
 
     background-position: left;
@@ -123,15 +145,22 @@ h5{
     padding: 1rem;
 }
 .main-nav-list li:hover{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
 }
 .main-nav a{
+}
+
+.about, .work, .education, .skills, .community-service, .references{
+    
+    background-color: #f6f6f6;
 }
 
 .about {
     grid-area: about;
 }
-
+.about p{
+    padding: 0 2rem;
+}
 .work{
     grid-area: work;
 }
@@ -140,6 +169,10 @@ h5{
 .work-item li{
     padding: 0.25rem;
 }
+.work-item i {
+    padding-left: 0rem;
+    font-size: 0.9rem;
+}
 .work-item ul{
     list-style: initial;
     padding: 0 4rem;
@@ -147,8 +180,11 @@ h5{
 .education{
     grid-area: education;
 }
+.education h4{
+    padding: 0 1.2rem;
+}
 .education p{
-    padding: 0 4rem;
+    padding: 0 3rem;
 }
 .skills{
     grid-area: skills;
@@ -157,7 +193,7 @@ h5{
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    padding: 0;
+    padding: 0 2rem;
     margin-left: -0.5rem;
 }
 .skills ul li{
@@ -169,7 +205,8 @@ h5{
     grid-area: community;
 }
 .community-service p{
-    padding: 0 4rem;
+    padding: 0 2rem;
+    /* max-width: 30rem; */
 }
 .references{
     grid-area: references;
@@ -177,9 +214,16 @@ h5{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+
+    padding-bottom: 4rem;
 }
 .references h3{
     width: 100%;
+    text-align: center;
+    padding-left: 0;
+}
+p.reference-address{
+    font-size: 0.75rem;
 }
 .reference{
     max-width: 12rem;
@@ -188,13 +232,19 @@ h5{
 .reference h4{
     padding: 0;
 }
+
 footer{
     grid-area: footer;
     display: flex;
     flex-flow: row wrap;
+
+    font-size: 0.75rem;
+
+    padding: 1rem 0;
 }
 footer p{
     width: 100%;
+    text-align: center;
 }
 @media only screen and (min-width: 40rem){
     footer p{

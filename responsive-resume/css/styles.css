@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&display=swap');
+
 .resume{
     max-width: 70rem;
     margin: 0 auto;
     display: grid;
+
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+
     grid-template-columns: 1fr; 
     grid-template-rows:  min-content;
     grid-auto-flow: row dense;
@@ -17,6 +24,29 @@
         "references"
         "footer"
         ;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 2.25rem;
+}
+h3{
+    font-size: 2rem;
+    background-color: rgb(241, 241, 241);
+    padding: 0 0 0 1rem;
+}
+h4{
+    font-size: 1.5rem;
+    padding: 0 0 0 1.5rem;
+}
+h5{
+    font-size: 1.25rem;
+    padding: 0 0 0 2.5rem;
 }
 
 @media only screen and (min-width:62rem){
@@ -38,13 +68,14 @@
 }
 
 .grid-item{
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 
 .profile-name{
     grid-area: profile-name;
     place-self: center;
     font-size: 1.75rem;
+    text-align: center;
 }
 
 
@@ -64,15 +95,17 @@
 }
 
 /* Resize Profile Photo */
-/* @media only screen and (min-width: 40rem){
+@media only screen and (min-width: 40rem){
     .profile-photo{
         width: 32rem;
         height: 32rem;
         background-image: url("../images/photo-medium.jpg");
 
     }
-} */
+}
 /* End Resize Profile Photo */
+
+
 
 .main-nav{
     margin-top: 1.5rem;
@@ -83,9 +116,11 @@
     list-style: none;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
 }
 .main-nav-list li{
-    padding: 2rem;
+    padding: 1rem;
 }
 .main-nav-list li:hover{
     background-color: aqua;
@@ -102,11 +137,18 @@
 }
 .work-list{
 }
-.work-item{
-
+.work-item li{
+    padding: 0.25rem;
+}
+.work-item ul{
+    list-style: initial;
+    padding: 0 4rem;
 }
 .education{
     grid-area: education;
+}
+.education p{
+    padding: 0 4rem;
 }
 .skills{
     grid-area: skills;
@@ -115,6 +157,8 @@
     list-style: none;
     display: flex;
     flex-flow: row wrap;
+    padding: 0;
+    margin-left: -0.5rem;
 }
 .skills ul li{
     margin: 0.5rem;
@@ -124,17 +168,21 @@
 .community-service{
     grid-area: community;
 }
+.community-service p{
+    padding: 0 4rem;
+}
 .references{
     grid-area: references;
     
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .references h3{
     width: 100%;
 }
 .reference{
+    max-width: 12rem;
     padding: 0 1rem;
 }
 footer{

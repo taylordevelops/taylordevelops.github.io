@@ -185,6 +185,9 @@ h5{
     max-width: 12rem;
     padding: 0 1rem;
 }
+.reference h4{
+    padding: 0;
+}
 footer{
     grid-area: footer;
     display: flex;

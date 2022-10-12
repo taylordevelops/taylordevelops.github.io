@@ -37,14 +37,21 @@ body{
     position: absolute;
     opacity: calc(1 - 0.65);
     left: 0;
-    top: 0;
+    top: 0.5rem;
     width: 100vw;
     height: calc(300px + 32px + 20px);
     background-image: url(../images/wave.svg);
     background-size: cover;
     background-repeat: repeat-x;
-
+    clip-path: ellipse(70% 20% at 100%);
 }
+@media only screen and (max-width: 900px) {
+    #clip{
+        display: none;
+    }
+}
+
+
 .splash-text{
     margin: 0;
     transition: ease 200ms;

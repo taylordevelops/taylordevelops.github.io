@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: #fdfdfd;
+    background-image: radial-gradient(circle, #ffffff, #fdfdfd, #fafafa, #f8f8f8, #f6f6f6);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+a > #logo {
+    max-width: 100%;
+    width: 1200px;
+}
+#logo {
+    max-width: 1200px;
+    padding: 1rem;
+    }
+@media only screen and (min-width: 1200px){
+    #logo {
+        border: solid #333 3px;
+        border-radius: 1rem;
+    }
+}

@@ -1,0 +1,134 @@
+:root{
+    --font-1: var('Karla', sans-serif;);
+    --font-2: var('Merriweather', serif;);
+}
+html{
+    font-family: var(--font-2);
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+.header-logo{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    min-width: 15rem;
+    margin: 1rem;
+}
+.heart-logo{
+    max-width: 4rem;
+}
+.header-logo-text{
+    padding-left: 1rem;
+    font-family: var(--font-1);
+    font-size: 3rem;
+    transform: translateY(-0.3rem);
+}
+#main-nav{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.hero-image-container{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 34rem;
+    background-image: url(https://picsum.photos/id/11/1875/1250);
+    background-size: cover;
+    margin-bottom: 0.25rem;
+}
+.listing-container{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.listing-tn{
+    width: 100%;
+    min-height: 20rem;
+}
+#listing-01{
+    background-image: url(https://picsum.photos/id/13/925/500);
+    background-position: cover;
+}
+#listing-02{
+    background-image: url(https://picsum.photos/id/17/925/500);
+    background-position: cover;
+}
+#listing-03{
+    background-image: url(https://picsum.photos/id/11/925/500);
+    background-position: cover;
+}
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.footer-column{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+.footer-column ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+@media only screen and (min-width:1200px){
+html{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+body{
+    max-width: 1200px;
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+}
+#main-nav{
+    width: 50%;
+    justify-content: end;
+}
+.header-logo{
+    width: 45%;
+    justify-content: left;
+}
+.hero-image-container{
+    border-radius: 1rem;
+}
+.listing-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.listing-tn{
+    margin: 0;
+    width: 33%;
+    padding: 0;
+    min-height: 20rem;
+    transition: ease 1s;
+    border-radius: 1rem;
+}
+.listing-tn:hover{
+    transition: ease 1s;
+    position: relative;
+    transform: translate(0, -1rem);
+}
+.footer-column{
+    width: 33%;
+    padding: 0;
+}
+}

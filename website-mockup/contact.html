@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Taylor Clark">
+    <title>CSS Transitions</title>
+    <link href="css/styles_home.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Merriweather&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page-container">
+        <header>
+            <div id="clip"></div>
+            <div id="splash-container">
+                <a href="home.html" id="home-link">
+                    <h1 class="splash-text">DesignSip.com</h1>
+                </a>
+                <h2 class="splash-text">Summer Internship Program</h2>
+            </div>
+
+            <nav id="main-nav">
+                <a href="#" target="_new">Sign-In</a>
+                <span class="nav-separator">&nbsp;|&nbsp;</span>
+                <a href="#" target="_new">My Account</a>&nbsp;
+                <a href="#" target="_new"><img src="images/shopping-cart.png" alt="shopping cart icon"
+                        id="shopping-cart" /></a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-image-container">
+                <span class="hero-text">Domus in corde.</span>
+            </section>
+
+            <section class="contact-form-container">
+
+                <form action="#">
+
+                    <label for="fname">First Name</label><br />
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                    <br />
+                    <label for="lname">Last Name</label><br />
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                    <br />
+                    <label for="country">Country of Residence</label><br />
+                    <select id="country" name="country">
+                        <option value="us">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="mexico">Mexico</option>
+                    </select>
+                    <br />
+                    <label for="subject">Subject Matter</label><br />
+                    <textarea id="subject" name="subject" placeholder="Comments" style="height:5rem"></textarea>
+                    <br />
+                    <input type="submit" value="Submit">
+
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-column">
+                <p class="contact-info">
+                    Design Summer Internship Program<br />
+                    123 Address Avenue<br />
+                    City, State 12345<br />
+                    (123) 456-7890<br />
+                    <a href="mailto:info@realtygroup.com" class="inline-link">info@realtygroup.com</a>
+                </p>
+            </div>
+            <div class="footer-column" id="copyright"> &copy; 2022 Realty Group</div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#" title="Sign-In with your User Name">Sign-In</a></li>
+                    <li><a href="#" title="Update Account Settings">My Account</a></li>
+                    <li>
+                        <a href="#" title="Find us on Facebook"><img src="images/facebook.png" alt="Facebook Icon"
+                                id="fb-icon"></a>
+                        <a href="#" title="Find us on Instagram"><img src="images/instagram.png" alt="Instagram Icon"
+                                id="fb-icon"></a>
+                        <a href="#" title="Find us on Twitter"><img src="images/twitter.png" alt="Twitter Icon"
+                                id="fb-icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

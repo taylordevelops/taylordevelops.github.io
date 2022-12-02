@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Taylor Clark">
+    <title>Splash Page Assignment</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preload" href="fonts/DancingScript-Regular.ttf" as="font" crossorigin />
+    <link rel="preload" href="fonts/Lora-Regular.ttf" as="font" crossorigin />
+
+</head>
+
+<body>
+
+    <div id="clip"></div>
+    <div class="social-icons">
+        <a href="#" target="_new">
+            <div id="twitter-icon" class="social-icon"></div>
+        </a>
+        <a href="#" target="_new">
+            <div id="instagram-icon" class="social-icon"></div>
+        </a>
+        <a href="#" target="_new">
+            <div id="facebook-icon" class="social-icon"></div>
+        </a>
+    </div>
+
+    <header id="splash-container">
+        <a href="home.html" id="home-link">
+            <h1 class="header-logo">DesignSip.com</h1>
+        </a>
+        <h2 class="tagline-text">Summer Internship Program</h2>
+    </header>
+
+    <main class="main-form">
+        <form action="/action_page.php" class="contact-form">
+            <fieldset class="first-name">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" required>
+            </fieldset>
+
+            <fieldset class="last-name">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" required>
+            </fieldset>
+
+            <fieldset class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset class="comments">
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="subject"></textarea>
+            </fieldset>
+
+            <fieldset class="privacy">
+                <label for="privacy">By clicking Submit, I agree to the terms and conditions of this <a href="#">Privacy
+                        Statement</a></label>
+                <input type="checkbox" id="privacy" name="privacy" required>
+            </fieldset>
+            <fieldset class="submit-reset">
+                <input type="submit" value="Submit" id="submit-button">
+                <input type="reset" valeu="Reset" id="reset-button">
+            </fieldset>
+        </form>
+    </main>
+
+
+</body>
+
+</html>

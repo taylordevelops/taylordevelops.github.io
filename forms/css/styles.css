@@ -1,0 +1,131 @@
+:root{
+    font-size: 6vw;
+
+    --h1-font: 'Dancing Script', cursive;
+    --h2-font: 'Lora', serif;
+    --h1-color: rgb(116, 30, 94);
+    --h2-color: rgb(239, 226, 226);
+}
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-Regular.ttf');
+}
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.ttf');
+}
+body{
+    margin: 0;
+    
+}
+#splash-container{
+
+    background-image: url('https://picsum.photos/id/1035/5854/3903');
+    background-repeat: none;
+    background-size: cover;
+    background-position: bottom;
+
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+
+}
+@media only screen and (max-width: 900px) {
+    #clip{
+        display: none;
+    }
+}
+
+
+.header-logo{
+    margin: 0.75rem;
+    transition: ease 200ms;
+}
+a{
+    color: var(--h1-color);
+    text-decoration: none;
+}
+h1.header-logo{
+    font-family: var(--h1-font);
+    text-shadow: 0 0 0.5rem rgba(252, 252, 252, 0.9);
+    font-size: 1rem;
+}
+h1.header-logo:hover{
+    
+    text-shadow: 0 0 0.5rem rgb(255, 255, 255);
+    /* transform: translateY(-2px); */
+    transform: rotate3d(1, 1, 1, 2deg);
+}
+h2.tagline-text{
+    font-size: 0.5rem;
+    font-family: var(--h2-font);
+    color: var(--h2-color);
+    margin-top: -0.75rem;
+}
+.social-icons{
+    position: absolute;
+    top: 0.25rem;
+    right: 1rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+}
+.social-icon{
+    width: 32px;
+    height: 32px;
+    margin: 16px;
+
+    transition: ease 200ms;
+}
+.social-icon:hover{
+    transform: translate(0, -4px);
+}
+#twitter-icon{
+    background-image: url(../images/twitter.png);
+    background-size: cover;
+}
+#instagram-icon{
+    background-image: url(../images/instagram.png);
+    background-size: cover;
+}
+#facebook-icon{
+    background-image: url(../images/facebook.png);
+    background-size: cover;
+}
+
+.main-form{
+    font-size: 0.15rem;
+    max-width: 10rem;
+}
+fieldset{
+    display: flex;
+    flex: row wrap;
+    justify-content: right;
+    border: none;
+}
+label, input{
+    max-width: 4.5rem;
+}
+label{
+    width: 2rem;
+}
+input{
+    width: 50%;
+}
+textarea{
+    width: 50%;
+    max-width: 4.5rem;
+    height: 1.5rem;
+}
+#privacy{
+    width: .0.5rem;
+    height: 0.5rem;
+}
+#submit-button, #reset-button{
+    max-width: 2rem;
+    margin: 0.25rem;
+}
